@@ -215,20 +215,3 @@ span {
     }
 }
 
-@keyframes words {
-    0%, 20% {
-        content: 'Web Developer';
-    }
-    21%, 40% {
-        content: 'Graphic Designer';
-    }
-    41%, 60% {
-        content: 'UI Designer';
-    }
-    61%, 80% {
-        content: 'Content Manager';
-    }
-    81%, 100% {
-        content: 'Software Tester';
-    }
-}
