@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Ekskul</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <img src="img/logosmk.jpg" alt="Logo" style="display: block; margin: 20px auto; width: 100px; height: 100px; border-radius: 0%;">
+        <h1>Formulir Pendaftaran Ekskul</h1>
+        <img src="">
+    </header>
+    <fieldset>
+        <legend>Biodata:</legend>
+        <form>
+            <label for="username">Nama Lengkap:</label><br>
+            <input type="text" id="username" name="username"><br>
+            
+            <label for="Kelas">Kelas:</label><br>
+            <select id="Kelas" name="Kelas">
+                <option value="X_PPLG_1">X PPLG 1</option>
+                <option value="X_PPLG_2">X PPLG 2</option>
+                <option value="X_PPLG_3">X PPLG 3</option>
+                <option value="XI_RPL_1">XI RPL 1</option>
+                <option value="XI_RPL_2">XI RPL 2</option>
+                <option value="X_PH_1">X PH 1</option>
+                <option value="X_PH_2">X PH 2</option>
+                <option value="X_PH_3">X PH 3</option>
+                <option value="XI_PH_1">XI PH 1</option>
+                <option value="XI_PH_2">XI PH 2</option>
+                <option value="XI_PH_3">XI PH 3</option>
+                <option value="X_MPLB_1">X MPLB 1</option>
+                <option value="X_MPLB_2">X MPLB 2</option>
+                <option value="X_MPLB_3">X MPLB 3</option>
+                <option value="XI_MPLB_1">XI MPLB 1</option>
+                <option value="XI_MPLB_2">XI MPLB 2</option>
+                <option value="XI_MPLB_3">XI MPLB 3</option>
+                <option value="X_TO_1">X TO 1</option>
+                <option value="X_TO_2">X TO 2</option>
+                <option value="X_TO_3">X TO 3</option>
+                <option value="XI_TKR_1">XI TKR 1</option>
+                <option value="XI_TKR_2">XI TKR 2</option>
+                <option value="XI_TKR_3">XI TKR 3</option>
+            </select><br>
+            
+            <label for="tlahir">Tempat Lahir:</label><br>
+            <input type="text" id="tlahir" name="tlahir"><br>
+            
+            <label for="tgl">Tanggal Lahir:</label><br>
+            <input type="date" id="tgl" name="tgl"><br>
+            
+            <label for="Usia">Usia:</label><br>
+            <input type="number" min="12" max="20" id="Usia" name="Usia"><br>
+            
+            <label for="JK">Jenis Kelamin:</label><br>
+            <input type="radio" id="laki-laki" name="jenis_kelamin" value="LAKI-LAKI">
+            <label for="laki-laki">Laki-Laki</label><br>
+            <input type="radio" id="perempuan" name="jenis_kelamin" value="PEREMPUAN">
+            <label for="perempuan">Perempuan</label><br>
+            
+            <label for="Agama">Agama:</label><br>
+            <select id="Agama" name="Agama">
+                <option value="Islam">Islam</option>
+                <option value="Kristen_Protestan">Kristen Protestan</option>
+                <option value="Kristen_Katolik">Kristen Katolik</option>
+                <option value="Budha">Budha</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Khonghucu">Khonghucu</option>
+                <option value="Penghayat_Kepercayaan">Penghayat Kepercayaan</option>
+            </select><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Alamat:</legend>
+        <form>
+        <label for="alamat">Alamat Lengkap:</label><br>
+        
+        <label for="rt">RT:</label><br>
+        <input type="number" min="1" max="20" id="rt" name="rt"><br>
+        
+        <label for="rw">RW:</label><br>
+        <input type="number" min="1" max="20" id="rw" name="rw"><br>
+        
+        <label for="ds/klrhn">Desa / Kelurahan:</label><br>
+        <select id="ds/klrhn" name="ds/klrhn">
+            <option value="Cipada">Cipada</option>
+            <option value="Jambudipa">Jambudipa</option>
+            <option value="Padaasih">Padaasih</option>
+            <option value="Pasir_Halang">Pasir Halang</option>
+            <option value="Pasir_Langu">Pasir Langu</option>
+            <option value="Tugu_Mukti">Tugu Mukti</option>
+            <option value="Sadang_Mekar">Sadang Mekar</option>
+        </select><br>
+        
+        <label for="kec">Kecamatan:</label><br>
+        <select id="kec" name="kec">
+            <option value="Cisarua">Cisarua</option>
+            <option value="Parongpong">Parongpong</option>
+            <option value="Lembang">Lembang</option>
+            <option value="Ngamprah">Ngamprah</option>
+            <option value="Padalarang">Padalarang</option>
+            <option value="Cipatat">Cipatat</option>
+            <option value="Cikalong_Wetan">Cikalong Wetan</option>
+            <option value="Batujajar">Batujajar</option>
+        </select><br>
+        
+        <label for="kk">Kabupaten / Kota:</label><br>
+        <select id="kk" name="kk">
+            <option value="Kab_Bandung_Barat">Kab. Bandung Barat</option>
+            <option value="Kab_Bandung">Kab. Bandung</option>
+            <option value="Kab_Cianjur">Kab. Cianjur</option>
+            <option value="Kab_Sumedang">Kab. Sumedang</option>
+            <option value="Kota_Bandung">Kota Bandung</option>
+            <option value="Kota_Cimahi">Kota Cimahi</option>
+        </select><br>
+        
+        <label for="prv">Provinsi:</label><br>
+        <select id="prv" name="prv">
+            <option value="Jawa_Barat">Jawa Barat</option>
+            <option value="Jawa_Tengah">Jawa Tengah</option>
+            <option value="Jawa_Timur">Jawa Timur</option>
+            <option value="DKI_Jakarta">DKI Jakarta</option>
+        </select><br>
+        
+        <label for="kd">Kode Pos:</label><br>
+        <input type="number" min="0" id="kd" name="kd"><br>
+    </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Kontak:</legend>
+        <form>
+        <label for="tlp">No Telepon:</label><br>
+        <input type="tel" id="tlp" name="tlp"><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+    </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Akun:</legend>
+        <form>
+        <label for="Fname">First Name:</label><br>
+        <input type="text" id="Fname" name="Fname"><br>
+        
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        
+        <label for="pw">Password:</label><br>
+        <input type="password" id="pw" name="pw"><br>
+         
+        <label for="kpw">Konfirmasi Password:</label><br>
+        <input type="password" id="kpw" name="kpw"><br>
+    </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Ekstrakurikuler:</legend>
+        <form>
+        <label for="ekskul">Ekstrakurikuler:</label><br>
+        <input type="checkbox" id="ekskul" name="ekskul">
+        <label for="paskibra">Paskibra</label><br>
+        <input type="checkbox" id="ekskul" name="ekskul">
+        <label for="pmr">PMR</label><br>
+        <input type="checkbox" id="ekskul" name="ekskul">
+        <label for="futsal">Futsal</label><br>
+        <input type="checkbox" id="ekskul" name="ekskul">
+        <label for="irma">Irma</label><br>
+        <input type="checkbox" id="ekskul" name="ekskul">
+        <label for="sastra_sunda">Sastra Sunda</label><br>
+        <input type="checkbox" id="ekskul" name="ekskul">
+        <label for="sispakala">Sispakala</label><br>
+        <input type="checkbox" id="ekskul" name="ekskul">
+        <label for="basket">Basket</label><br>
+        <input type="checkbox" id="ekskul" name="ekskul">
+        <label for="volly">Volly</label><br>
+        <input type="checkbox" id="ekskul" name="ekskul">
+        <label for="pramuka">Pramuka</label><br>
+        <input type="checkbox" id="ekskul" name="ekskul">
+        <label for="renangl">Renang</label><br>
+        <input type="checkbox" id="ekskul" name="ekskul">
+        <label for="f&b">F&B</label><br>
+        <input type="checkbox" id="ekskul" name="ekskul">
+        <label for="codax">Codax</label><br>
+        <input type="checkbox" id="ekskul" name="ekskul">
+        <label for="preverantif">Preverantif</label><br>
+        <input type="checkbox" id="ekskul" name="ekskul">
+        <label for="silat">Silat</label><br>
+        <input type="checkbox" id="ekskul" name="ekskul">
+        <label for="taekwondo">Taekwondo</label><br>
+       </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Upload Persyaratan:</legend>
+        <form>
+        <label for="pf">Upload Pas Foto 3 X 4:</label><br>
+        <input type="file" id="pf" name="pf"><br>
+        
+        <label for="ktp">Upload Kartu Tanda Pelajar:</label><br>
+        <input type="file" id="ktp" name="ktp"><br>
+    </form>
+    </fieldset>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
+<footer>
+    <p>&copy;2024  Hak Cipta Nuristiana izatul</p>
+</footer>
+
+</body>
+</html>
